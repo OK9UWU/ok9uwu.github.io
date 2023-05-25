@@ -9,19 +9,12 @@
         width: 35em;
         margin: 0 auto;
         font-family: Tahoma, Verdana, Arial, sans-serif;
-        .root {
-        display: inline;
-        vertical-align: top;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 16px;
-        line-height: 28px;
-}
     }
 </style>
 <meta charset="UTF-8">
 </head>
 <body>
-<h1>Welcome to <p id="root"></p>!</h1>
+<h1 id="root">!</h1>
 <p>If you see this page, github pages is successfully installed and
 working. Further configuration is required.</p>
 
@@ -33,6 +26,6 @@ Commercial support is available at
 <p><em>Thank you for visiting.</em></p>
 </body>
 <script>
-document.getElementById("root").innerHTML = window.location.href;
+document.getElementById("root").innerHTML = "Welcome to" + window.location.href;
 </script>
 </html>
