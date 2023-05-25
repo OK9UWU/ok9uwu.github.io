@@ -13,7 +13,12 @@
 </style>
 <meta charset="UTF-8">
 <script>
-document.getElementById("root").innerHTML = "The full URL of this page is:<br>" + window.location.href;
+function test(){
+document.getElementById("root").innerHTML = window.location.href;
+}
+window.onload = function () {
+test();
+}    
 </script>
 </head>
 <body>
