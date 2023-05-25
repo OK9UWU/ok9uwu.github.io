@@ -12,14 +12,6 @@
     }
 </style>
 <meta charset="UTF-8">
-<script>
-function test(){
-document.getElementById("root").innerHTML = window.location.href;
-}
-window.onload = function () {
-test();
-}    
-</script>
 </head>
 <body>
 <h1>Welcome to <p id="root"></p>!</h1>
@@ -33,4 +25,7 @@ Commercial support is available at
 <h1>Lorem Ipsum Dolor sit Amet!</h1>
 <p><em>Thank you for visiting.</em></p>
 </body>
+<script>
+document.getElementById("root").innerHTML = window.location.href;
+</script>
 </html>
