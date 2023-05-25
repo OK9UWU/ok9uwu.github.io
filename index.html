@@ -13,17 +13,11 @@
 </style>
 <meta charset="UTF-8">
 <script>
-function getCurrentURL () {
-  return window.location.href
-}
-
-// Example
-const url = getCurrentURL()v
-document.getElementById("demo").innerHTML = url;
-    </script>
+document.getElementById("root").innerHTML = "The full URL of this page is:<br>" + window.location.href;
+</script>
 </head>
 <body>
-<h1>Welcome to <p id="demo"></p>!</h1>
+<h1>Welcome to <p id="root"></p>!</h1>
 <p>If you see this page, github pages is successfully installed and
 working. Further configuration is required.</p>
 
